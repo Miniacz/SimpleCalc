@@ -22,6 +22,7 @@ class Main {
         // klasa, która obługuje poszczególne metody matematyczne dla opcji kalkulatora
          class calcCompute {
 
+            // metoda dla dodawania
            int addXY(int x, int y){
                int addXYsum;
                addXYsum = x + y;
