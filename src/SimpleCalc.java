@@ -14,18 +14,20 @@ class Main {
         // klasa obsługująca poszczególne opcje
         class MenuItem {
 
-            void displayMenuItem(){
+            private void displayMenuItem(){
                 System.out.println("\n Menu option picked.\n");
             }
         }
 
         // klasa, która obługuje poszczególne metody matematyczne dla opcji kalkulatora
-        // class calcCompute {
+         class calcCompute {
 
-        //   int addXY(int x, int y){
-
-        //   }
-        // }
+           int addXY(int x, int y){
+               int addXYsum;
+               addXYsum = x + y;
+               return addXYsum;
+           }
+         }
 
         MenuItem option1 = new MenuItem();
 
