@@ -11,7 +11,7 @@ class Main {
 
         // klasa obsługująca poszczególne opcje
         class MenuItem {
-            Scanner read = new Scanner(System.in);
+            private Scanner read = new Scanner(System.in);
 
             private void displayMainMenu(){
                 // main menu + plus info
@@ -24,9 +24,9 @@ class Main {
             }
 
             // ===== metoda testowa =====
-            private void displayMenuItem(){
-                System.out.println("\n Menu option picked.\n");
-            }
+            //private void displayMenuItem(){
+            //    System.out.println("\n Menu option picked.\n");
+            //}
 
             // ===== metody właściwe =====
 
