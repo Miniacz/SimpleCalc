@@ -39,7 +39,7 @@ class Main {
                         ++tryCounter;
                         if (tryCounter == 3) {
                             czyPoprawne = false;
-                            System.out.println("\n Po trzech nieudanych próbach odczytania danych, program zakończył pracę. \n");
+                            System.out.println("\n After 3 unsuccessful trials of getting user input, program stopped asking and used value 0 instead. \n");
                         }
                     }
 

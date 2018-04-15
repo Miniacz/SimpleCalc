@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6451b0a9-5dde-4723-ba67-aed314e394ed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/Main$1MenuItem.class" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/Main$1MenuItem.class" />
       <change beforePath="$PROJECT_DIR$/src/SimpleCalc.java" afterPath="$PROJECT_DIR$/src/SimpleCalc.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,12 +20,12 @@
       <file leaf-file-name="SimpleCalc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="162" column="50" lean-forward="true" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
+            <state relative-caret-position="731">
+              <caret line="46" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="188" selection-end-column="1" />
               <folding>
-                <element signature="e#0#7509#0" expanded="true" />
-                <element signature="class#397:1947" expanded="false" />
-                <element signature="e#2602#2631#0" expanded="false" />
+                <element signature="e#0#7536#0" expanded="true" />
+                <element signature="class#2032:5865" expanded="false" />
+                <element signature="e#2629#2658#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -294,7 +292,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -304,9 +302,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7509#0" expanded="true" />
-            <element signature="class#397:1947" expanded="false" />
-            <element signature="e#2602#2631#0" expanded="false" />
+            <element signature="e#0#7536#0" expanded="true" />
+            <element signature="class#2032:5865" expanded="false" />
+            <element signature="e#2629#2658#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -316,9 +314,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7509#0" expanded="true" />
-            <element signature="class#397:1947" expanded="false" />
-            <element signature="e#2602#2631#0" expanded="false" />
+            <element signature="e#0#7536#0" expanded="true" />
+            <element signature="class#2032:5865" expanded="false" />
+            <element signature="e#2629#2658#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -328,9 +326,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7509#0" expanded="true" />
-            <element signature="class#397:1947" expanded="false" />
-            <element signature="e#2602#2631#0" expanded="false" />
+            <element signature="e#0#7536#0" expanded="true" />
+            <element signature="class#2032:5865" expanded="false" />
+            <element signature="e#2629#2658#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -340,21 +338,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7509#0" expanded="true" />
-            <element signature="class#397:1947" expanded="false" />
-            <element signature="e#2602#2631#0" expanded="false" />
+            <element signature="e#0#7536#0" expanded="true" />
+            <element signature="class#2032:5865" expanded="false" />
+            <element signature="e#2629#2658#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="162" column="50" lean-forward="true" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
+        <state relative-caret-position="731">
+          <caret line="46" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="188" selection-end-column="1" />
           <folding>
-            <element signature="e#0#7509#0" expanded="true" />
-            <element signature="class#397:1947" expanded="false" />
-            <element signature="e#2602#2631#0" expanded="false" />
+            <element signature="e#0#7536#0" expanded="true" />
+            <element signature="class#2032:5865" expanded="false" />
+            <element signature="e#2629#2658#0" expanded="false" />
           </folding>
         </state>
       </provider>
