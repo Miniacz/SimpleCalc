@@ -1,6 +1,9 @@
-// - dodać wyjątki - obsługa InputMismatchException - zrobić to przez try/catch
+// - dodać poprawną formę dzielenia - z obsługą floata
 // - formatowanie całości (wodotryski i czyszczenie ekranu)
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 class Main {
@@ -9,8 +12,51 @@ class Main {
         // zmienna sterująca menu - sterowana przez użytkownika
         int menuControl = 1;
 
+        class ValidateInput {
+
+            private int inputValidator() {
+
+                BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
+                int readed = 0;
+                boolean czyPoprawne = true;
+                int tryCounter = 0;
+
+                while (czyPoprawne) {
+
+                    //obsługa wyjątków
+                    try {
+//                        System.out.println("Podaj liczbę:");
+                        readed = Integer.parseInt(userInput.readLine());
+//                        System.out.println("\n");
+                    } catch (NumberFormatException n) {
+                        System.out.println("Invalid data type. Please use numbers.");
+                    } catch (IOException e) {
+                        System.out.println("Error");
+                    }
+
+                    // zabezpieczenie przed pytaniem użytkownika w nieskończoność
+                    if (readed == 0) {
+                        ++tryCounter;
+                        if (tryCounter == 3) {
+                            czyPoprawne = false;
+                            System.out.println("\n Po trzech nieudanych próbach odczytania danych, program zakończył pracę. \n");
+                        }
+                    }
+
+                    // jeśli poprawnie została wprowadzona informacja przez użytkownika, zamknij pętlę
+                    if (readed != 0) {
+                        czyPoprawne = false;
+                    }
+
+                }
+
+                return readed;
+            }
+        }
+
         // klasa obsługująca poszczególne opcje
         class MenuItem {
+            ValidateInput checkedInput = new ValidateInput();
             private Scanner read = new Scanner(System.in);
 
             private void displayMainMenu(){
@@ -34,14 +80,14 @@ class Main {
             private int addXY(){
                 System.out.println(
                         "\n ============ ADD ============"
-                                + "\n adds two numbers given by user "
-                                + "\n ============================="
+                        + "\n adds two numbers given by user "
+                        + "\n ============================="
                 );
                 int addXYout;
                 System.out.println("\n Enter first number: \n");
-                int x = read.nextInt();
+                int x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = read.nextInt();
+                int y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
                 addXYout = x + y;
                 return addXYout;
@@ -56,9 +102,9 @@ class Main {
                 );
                 int subtractXYout;
                 System.out.println("\n Enter first number: \n");
-                int x = read.nextInt();
+                int x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = read.nextInt();
+                int y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
                 subtractXYout = x - y;
                 return subtractXYout;
@@ -73,9 +119,9 @@ class Main {
                 );
                 int multiplyXYout;
                 System.out.println("\n Enter first number: \n");
-                int x = read.nextInt();
+                int x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = read.nextInt();
+                int y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
                 multiplyXYout = x * y;
                 return multiplyXYout;
@@ -90,9 +136,9 @@ class Main {
                 );
                 int divideXYout;
                 System.out.println("\n Enter first number: \n");
-                int x = read.nextInt();
+                int x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = read.nextInt();
+                int y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
                 divideXYout = x / y;
                 return divideXYout;
@@ -105,8 +151,8 @@ class Main {
         // czysto estetyczne
         System.out.println(
                 "\n ==================================================="
-                        + "\n TURBO CALC 6000" + " by Miniacz"
-                        + "\n ==================================================="
+                + "\n TURBO CALC 6000" + " by Miniacz"
+                + "\n ==================================================="
         );
 
         // pierwsze wywołanie menu
