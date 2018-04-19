@@ -1,4 +1,5 @@
 // - dodać poprawną formę dzielenia - z obsługą floata
+// - divide by zero lel - napraw to
 // - formatowanie całości (wodotryski i czyszczenie ekranu)
 
 import java.io.BufferedReader;
@@ -27,25 +28,18 @@ class Main {
                     try {
 //                        System.out.println("Podaj liczbę:");
                         readed = Integer.parseInt(userInput.readLine());
+                        // zamknięcie pętli po poprawnym wyniku
+                        czyPoprawne = false;
 //                        System.out.println("\n");
                     } catch (NumberFormatException n) {
                         System.out.println("Invalid data type. Please use numbers.");
-                    } catch (IOException e) {
-                        System.out.println("Error");
-                    }
-
-                    // zabezpieczenie przed pytaniem użytkownika w nieskończoność
-                    if (readed == 0) {
                         ++tryCounter;
                         if (tryCounter == 3) {
                             czyPoprawne = false;
-                            System.out.println("\n After 3 unsuccessful trials of getting user input, program stopped asking and used value 0 instead. \n");
+                            System.out.println("\n After 3 unsuccessful trials of getting user input, program stopped asking. \n");
                         }
-                    }
-
-                    // jeśli poprawnie została wprowadzona informacja przez użytkownika, zamknij pętlę
-                    if (readed != 0) {
-                        czyPoprawne = false;
+                    } catch (IOException e) {
+                        System.out.println("Error");
                     }
 
                 }
@@ -56,7 +50,7 @@ class Main {
 
         // klasa obsługująca poszczególne opcje
         class MenuItem {
-            ValidateInput checkedInput = new ValidateInput();
+            private ValidateInput checkedInput = new ValidateInput();
             private Scanner read = new Scanner(System.in);
 
             private void displayMainMenu(){
