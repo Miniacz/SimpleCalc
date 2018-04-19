@@ -1,24 +1,21 @@
-// - dodać poprawną formę dzielenia - z obsługą floata
-// - divide by zero lel - napraw to
+// - dodać obcinanie wyniku - jeśli wychodzi liczba całkowita, nie powinno wyświetlać przecinka i zera
 // - formatowanie całości (wodotryski i czyszczenie ekranu)
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 class Main {
     public static void main(String[] args) {
 
-        // zmienna sterująca menu - sterowana przez użytkownika
-        int menuControl = 1;
-
         class ValidateInput {
 
-            private int inputValidator() {
+            private float inputValidator() {
 
                 BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
-                int readed = 0;
+                float readed = 0;
                 boolean czyPoprawne = true;
                 int tryCounter = 0;
 
@@ -26,11 +23,10 @@ class Main {
 
                     //obsługa wyjątków
                     try {
-//                        System.out.println("Podaj liczbę:");
-                        readed = Integer.parseInt(userInput.readLine());
+
+                        readed = Float.parseFloat(userInput.readLine());
                         // zamknięcie pętli po poprawnym wyniku
                         czyPoprawne = false;
-//                        System.out.println("\n");
                     } catch (NumberFormatException n) {
                         System.out.println("Invalid data type. Please use numbers.");
                         ++tryCounter;
@@ -71,71 +67,77 @@ class Main {
             // ===== metody właściwe =====
 
             // == metoda dla dodawania ==
-            private int addXY(){
+            private float addXY(){
                 System.out.println(
                         "\n ============ ADD ============"
                         + "\n adds two numbers given by user "
                         + "\n ============================="
                 );
-                int addXYout;
+                float addXYout;
                 System.out.println("\n Enter first number: \n");
-                int x = checkedInput.inputValidator();
+                float x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = checkedInput.inputValidator();
+                float y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
                 addXYout = x + y;
                 return addXYout;
             }
 
             // == metoda dla odejmowania ==
-            private int subtractXY(){
+            private float subtractXY(){
                 System.out.println(
                         "\n ============ SUBTRACT ============"
                                 + "\n subtracts two numbers given by user "
                                 + "\n =================================="
                 );
-                int subtractXYout;
+                float subtractXYout;
                 System.out.println("\n Enter first number: \n");
-                int x = checkedInput.inputValidator();
+                float x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = checkedInput.inputValidator();
+                float y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
                 subtractXYout = x - y;
                 return subtractXYout;
             }
 
             // == metoda dla mnożenia ==
-            private int multiplyXY(){
+            private float multiplyXY(){
                 System.out.println(
                         "\n ============ MULTIPLY ============"
                                 + "\n multiplies two numbers given by user "
                                 + "\n =================================="
                 );
-                int multiplyXYout;
+                float multiplyXYout;
                 System.out.println("\n Enter first number: \n");
-                int x = checkedInput.inputValidator();
+                float x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = checkedInput.inputValidator();
+                float y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
                 multiplyXYout = x * y;
                 return multiplyXYout;
             }
 
             // == metoda dla dzielenia ==
-            private int divideXY(){
+            private float divideXY(){
                 System.out.println(
                         "\n ============ DIVIDE ============"
                                 + "\n divides two numbers given by user "
                                 + "\n ================================"
                 );
-                int divideXYout;
+                float divideXYout = 0;
                 System.out.println("\n Enter first number: \n");
-                int x = checkedInput.inputValidator();
+                float x = checkedInput.inputValidator();
                 System.out.println("\n Enter second number: \n");
-                int y = checkedInput.inputValidator();
+                float y = checkedInput.inputValidator();
                 //System.out.println("\n Result: \n");
-                divideXYout = x / y;
+                // wyłapanie dzielenia przez 0
+                    try {
+                        divideXYout = x / y;
+                    } catch (ArithmeticException e) {
+                        System.out.println("Please keep in mind, that dividing by zero is not allowed in math. Result forced in zero.");
+                    }
                 return divideXYout;
+
             }
         }
 
@@ -152,10 +154,21 @@ class Main {
         // pierwsze wywołanie menu
         option.displayMainMenu();
 
+        // zmienna sterująca menu - sterowana przez użytkownika
+        int menuControl = -1;
+        boolean switchOnOff = true;
+
         // główna pętla menu - ma powtarzać menu, dopóki użytkownik nie będzie chciał skończyć programu
-        while (menuControl > 0){
-            Scanner read = new Scanner(System.in);
-            menuControl = read.nextInt();
+        while (switchOnOff){
+
+            // obsługa wyjątku, gdzie użytkownik podaje niewłaściwe dane sterujące, inne niż 0-5
+            try {
+                Scanner read = new Scanner(System.in);
+                menuControl = read.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4 or 5.");
+            }
+
 
             if (menuControl == 1){
                 System.out.println("\n Addition result: " + option.addXY() + "\n");
@@ -175,6 +188,7 @@ class Main {
 
             if (menuControl == 0){
                 System.out.println("\n" + "Bye!" + "\n");
+                switchOnOff = false;
             }
 
         }
