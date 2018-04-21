@@ -11,9 +11,9 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 // klasa obsługująca sprawdzanie danych wprowadzonych przez użytkownika
-class ValidateInput {
+class InputValidator {
 
-    public float inputValidator() {
+    public float validateInput() {
 
         BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
         float readed = 0;
@@ -46,7 +46,7 @@ class ValidateInput {
 
 // klasa obsługująca poszczególne opcje menu
 class MenuItem {
-    private ValidateInput checkedInput = new ValidateInput();
+    private InputValidator checkedInput = new InputValidator();
     private Scanner read = new Scanner(System.in);
 
     public void displayMainMenu(){
@@ -75,9 +75,9 @@ class MenuItem {
         );
         float addXYout;
         System.out.println("\n Enter first number: \n");
-        float x = checkedInput.inputValidator();
+        float x = checkedInput.validateInput();
         System.out.println("\n Enter second number: \n");
-        float y = checkedInput.inputValidator();
+        float y = checkedInput.validateInput();
         //System.out.println("\n Result: \n");
         addXYout = x + y;
         return addXYout;
@@ -92,9 +92,9 @@ class MenuItem {
         );
         float subtractXYout;
         System.out.println("\n Enter first number: \n");
-        float x = checkedInput.inputValidator();
+        float x = checkedInput.validateInput();
         System.out.println("\n Enter second number: \n");
-        float y = checkedInput.inputValidator();
+        float y = checkedInput.validateInput();
         //System.out.println("\n Result: \n");
         subtractXYout = x - y;
         return subtractXYout;
@@ -109,9 +109,9 @@ class MenuItem {
         );
         float multiplyXYout;
         System.out.println("\n Enter first number: \n");
-        float x = checkedInput.inputValidator();
+        float x = checkedInput.validateInput();
         System.out.println("\n Enter second number: \n");
-        float y = checkedInput.inputValidator();
+        float y = checkedInput.validateInput();
         //System.out.println("\n Result: \n");
         multiplyXYout = x * y;
         return multiplyXYout;
@@ -126,9 +126,9 @@ class MenuItem {
         );
         float divideXYout = 0;
         System.out.println("\n Enter first number: \n");
-        float x = checkedInput.inputValidator();
+        float x = checkedInput.validateInput();
         System.out.println("\n Enter second number: \n");
-        float y = checkedInput.inputValidator();
+        float y = checkedInput.validateInput();
         divideXYout = x / y;
         return divideXYout;
 
