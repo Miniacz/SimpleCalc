@@ -12,13 +12,12 @@ import java.util.InputMismatchException;
 
 // klasa obsługująca sprawdzanie danych wprowadzonych przez użytkownika
 class InputValidator {
+    private BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
+    private float readed = 0;
+    private boolean czyPoprawne = true;
+    private int tryCounter = 0;
 
     public float validateInput() {
-
-        BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
-        float readed = 0;
-        boolean czyPoprawne = true;
-        int tryCounter = 0;
 
         while (czyPoprawne) {
 

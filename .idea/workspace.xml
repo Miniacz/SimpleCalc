@@ -20,14 +20,12 @@
       <file leaf-file-name="SimpleCalc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="136" column="15" lean-forward="true" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
               <folding>
                 <element signature="class#InputValidator#0" expanded="false" />
-                <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
                 <element signature="class#MenuItem#0" expanded="false" />
-                <element signature="e#2109#2138#0" expanded="false" />
-                <element signature="class#Main#0" expanded="false" />
+                <element signature="e#2124#2153#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -294,7 +292,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -305,10 +303,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -319,10 +315,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -333,10 +327,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -347,10 +339,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -361,10 +351,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -375,10 +363,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -389,10 +375,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -403,10 +387,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -417,24 +399,20 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="136" column="15" lean-forward="true" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
           <folding>
             <element signature="class#InputValidator#0" expanded="false" />
-            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#MenuItem#0" expanded="false" />
-            <element signature="e#2109#2138#0" expanded="false" />
-            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#2124#2153#0" expanded="false" />
           </folding>
         </state>
       </provider>
