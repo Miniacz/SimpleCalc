@@ -1,5 +1,4 @@
 // - dodać obcinanie wyniku - jeśli wychodzi liczba całkowita, nie powinno wyświetlać przecinka i zera
-// - formatowanie całości (wodotryski i czyszczenie ekranu)
 // - metody dodawania i odejmowania - przyjrzeć się im
 // - gettery i settery dla klas
 // - sout skrócić - zamiast System.out.println("coś") do np.: print(coś)
@@ -12,12 +11,12 @@ import java.util.InputMismatchException;
 
 // klasa obsługująca sprawdzanie danych wprowadzonych przez użytkownika
 class InputValidator {
-    private BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
-    private float readed = 0;
-    private boolean czyPoprawne = true;
-    private int tryCounter = 0;
 
     public float validateInput() {
+        BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in));
+        float readed = 0;
+        boolean czyPoprawne = true;
+        int tryCounter = 0;
 
         while (czyPoprawne) {
 
@@ -43,103 +42,176 @@ class InputValidator {
     }
 }
 
-// klasa obsługująca poszczególne opcje menu
-class MenuItem {
-    private InputValidator checkedInput = new InputValidator();
-    private Scanner read = new Scanner(System.in);
+// klasa służąca do ustawiania i pobieranai inputu
+class InputValueContainer {
+    private InputValidator checkedInputX = new InputValidator();
+    private InputValidator checkedInputY = new InputValidator();
+    private float x;
+    private float y;
 
-    public void displayMainMenu(){
-        // main menu + plus info
-        System.out.println("\n \n" + "Please pick menu option:" +
-                "\n 1 - adds two numbers" +
-                "\n 2 - subtracts two numbers" +
-                "\n 3 - multiplies two numbers" +
-                "\n 4 - divides two numbers" +
-                "\n 0 - quit" + "\n \n");
+    public float getX() {
+        return x;
     }
 
-    // ===== metoda testowa =====
-    //private void displayMenuItem(){
-    //    System.out.println("\n Menu option picked.\n");
-    //}
+    public void setX() {
+        System.out.println("\n Enter first number: \n");
+        this.x = checkedInputX.validateInput();
+    }
 
-    // ===== metody właściwe =====
+    public float getY() {
+        return y;
+    }
+
+    public void setY() {
+        System.out.println("\n Enter second number: \n");
+        this.y = checkedInputY.validateInput();
+    }
+}
+
+// klasa obsługująca poszczególne opcje menu
+class MenuItem {
+    private InputValidator checkedInputX = new InputValidator();
+    private InputValidator checkedInputY = new InputValidator();
+    private InputValueContainer value1 = new InputValueContainer();
+    private InputValueContainer value2 = new InputValueContainer();
 
     // == metoda dla dodawania ==
     public float addXY(){
-        System.out.println(
-                "\n ============ ADD ============"
-                        + "\n adds two numbers given by user "
-                        + "\n ============================="
-        );
         float addXYout;
-        System.out.println("\n Enter first number: \n");
-        float x = checkedInput.validateInput();
-        System.out.println("\n Enter second number: \n");
-        float y = checkedInput.validateInput();
-        //System.out.println("\n Result: \n");
-        addXYout = x + y;
+
+        System.out.println(
+                "\n ============ ADD ============" +
+                "\n adds two numbers given by user " +
+                "\n ============================="
+        );
+
+        value1.setX();
+        value2.setY();
+        addXYout = value1.getX() + value2.getY();
         return addXYout;
     }
 
     // == metoda dla odejmowania ==
     public float subtractXY(){
-        System.out.println(
-                "\n ============ SUBTRACT ============"
-                        + "\n subtracts two numbers given by user "
-                        + "\n =================================="
-        );
         float subtractXYout;
-        System.out.println("\n Enter first number: \n");
-        float x = checkedInput.validateInput();
-        System.out.println("\n Enter second number: \n");
-        float y = checkedInput.validateInput();
-        //System.out.println("\n Result: \n");
-        subtractXYout = x - y;
+
+        System.out.println(
+                "\n ============ SUBTRACT ============" +
+                "\n subtracts two numbers given by user " +
+                "\n =================================="
+        );
+
+        value1.setX();
+        value2.setY();
+        subtractXYout = value1.getX() - value2.getY();
         return subtractXYout;
     }
 
     // == metoda dla mnożenia ==
     public float multiplyXY(){
-        System.out.println(
-                "\n ============ MULTIPLY ============"
-                        + "\n multiplies two numbers given by user "
-                        + "\n =================================="
-        );
         float multiplyXYout;
-        System.out.println("\n Enter first number: \n");
-        float x = checkedInput.validateInput();
-        System.out.println("\n Enter second number: \n");
-        float y = checkedInput.validateInput();
-        //System.out.println("\n Result: \n");
-        multiplyXYout = x * y;
+
+        System.out.println(
+                "\n ============ MULTIPLY ============" +
+                "\n multiplies two numbers given by user " +
+                "\n =================================="
+        );
+
+        value1.setX();
+        value2.setY();
+        multiplyXYout = value1.getX() * value2.getY();
         return multiplyXYout;
     }
 
     // == metoda dla dzielenia ==
     public float divideXY(){
+        float divideXYout;
+
         System.out.println(
-                "\n ============ DIVIDE ============"
-                        + "\n divides two numbers given by user "
-                        + "\n ================================"
+                "\n ============ DIVIDE ============" +
+                "\n divides two numbers given by user " +
+                "\n ================================"
         );
-        float divideXYout = 0;
-        System.out.println("\n Enter first number: \n");
-        float x = checkedInput.validateInput();
-        System.out.println("\n Enter second number: \n");
-        float y = checkedInput.validateInput();
-        divideXYout = x / y;
+
+        value1.setX();
+        value2.setY();
+        divideXYout = value1.getX() / value2.getY();
         return divideXYout;
 
     }
 }
 
-// klasa główna
-class Main {
-    public static void main(String[] args) {
+// klasa obsługująca główną pętlę menu
+class MainMenu {
+
+    private void displayMainMenu(){
+        // main menu + plus info
+        System.out.println(
+                "\n \n" +
+                        "Please pick menu option:" +
+                        "\n 1 - adds two numbers" +
+                        "\n 2 - subtracts two numbers" +
+                        "\n 3 - multiplies two numbers" +
+                        "\n 4 - divides two numbers" +
+                        "\n 0 - quit" +
+                        "\n \n");
+    }
+
+    public void initializeMainMenu() {
+        // zmienna sterująca menu - sterowana przez użytkownika
+        int menuControl = -1;
+        boolean switchOnOff = true;
 
         // inicjalizacja obiektu menu
         MenuItem option = new MenuItem();
+        this.displayMainMenu();
+
+        while (switchOnOff){
+
+            // obsługa wyjątku, gdzie użytkownik podaje niewłaściwe dane sterujące, inne niż 0-5
+            try {
+                Scanner read = new Scanner(System.in);
+                menuControl = read.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4 or 5.");
+                menuControl = -1;
+            }
+
+            if (menuControl == 1){
+                System.out.println("\n Addition result: " + option.addXY() + "\n");
+                this.displayMainMenu();
+            } else if (menuControl == 2) {
+                System.out.println("\n Subtraction result: " + option.subtractXY() + "\n");
+                this.displayMainMenu();
+            } else if (menuControl == 3) {
+                System.out.println("\n Multiplication result: " + option.multiplyXY() + "\n");
+                this.displayMainMenu();
+            } else if (menuControl == 4) {
+
+                // wyłapanie dzielenia przez 0 - blok try/catch przeniesiony poza moduł sprawdzający kod
+                try {
+                    System.out.println("\n Division result: " + option.divideXY() + "\n");
+                    this.displayMainMenu();
+                } catch (ArithmeticException e) {
+                    System.out.println("Please keep in mind, that dividing by zero is not allowed in math. Result forced in zero.");
+                }
+
+            } else if (menuControl > 4) {
+                System.out.println("\n ERROR - Wrong value picked. You're in main menu." + "\n Please enter value between 0 up to 5" + "\n");
+            }
+
+            if (menuControl == 0){
+                System.out.println("\n" + "Bye!" + "\n");
+                switchOnOff = false;
+            }
+        }
+    }
+
+}
+
+// główny moduł programu
+class Main {
+    public static void main(String[] args) {
 
         // czysto estetyczne
         System.out.println(
@@ -148,51 +220,8 @@ class Main {
                 + "\n ==================================================="
         );
 
-        // pierwsze wywołanie menu
-        option.displayMainMenu();
-
-        // zmienna sterująca menu - sterowana przez użytkownika
-        int menuControl = -1;
-        boolean switchOnOff = true;
-
-        // główna pętla menu - ma powtarzać menu, dopóki użytkownik nie będzie chciał skończyć programu
-        while (switchOnOff){
-
-            // obsługa wyjątku, gdzie użytkownik podaje niewłaściwe dane sterujące, inne niż 0-5
-            try {
-                    Scanner read = new Scanner(System.in);
-                    menuControl = read.nextInt();
-                } catch (InputMismatchException e) {
-                    System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4 or 5.");
-                }
-
-            if (menuControl == 1){
-                    System.out.println("\n Addition result: " + option.addXY() + "\n");
-                    option.displayMainMenu();
-                } else if (menuControl == 2) {
-                    System.out.println("\n Subtraction result: " + option.subtractXY() + "\n");
-                    option.displayMainMenu();
-                } else if (menuControl == 3) {
-                    System.out.println("\n Multiplication result: " + option.multiplyXY() + "\n");
-                    option.displayMainMenu();
-                } else if (menuControl == 4) {
-                // wyłapanie dzielenia przez 0
-                    try {
-                        System.out.println("\n Division result: " + option.divideXY() + "\n");
-                        option.displayMainMenu();
-                    } catch (ArithmeticException e) {
-                        System.out.println("Please keep in mind, that dividing by zero is not allowed in math. Result forced in zero.");
-                    }
-                } else if (menuControl > 4) {
-                    System.out.println("\n ERROR - Wrong value picked. You're in main menu." + "\n Please enter value between 0 up to 5" + "\n");
-                }
-
-            if (menuControl == 0){
-                System.out.println("\n" + "Bye!" + "\n");
-                switchOnOff = false;
-            }
-
-        }
-
+        // inicjalizacja menu przez wywołanie odpowiedniej klasy
+        MainMenu MenuObject = new MainMenu();
+        MenuObject.initializeMainMenu();
     }
 }
