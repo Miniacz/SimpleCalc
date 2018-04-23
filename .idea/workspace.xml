@@ -21,28 +21,35 @@
       <file leaf-file-name="SimpleCalc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="226" column="1" lean-forward="true" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="233" column="1" lean-forward="true" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
               <folding>
-                <element signature="e#0#7382#0" expanded="true" />
+                <element signature="e#0#7647#0" expanded="true" />
                 <element signature="class#InputValidator#0" expanded="false" />
                 <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
                 <element signature="class#InputValueContainer#0" expanded="false" />
-                <element signature="e#1769#1770#0" expanded="true" />
-                <element signature="e#1793#1794#0" expanded="true" />
-                <element signature="e#1957#1958#0" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#1920#1921#0" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
                 <element signature="class#MenuItem#0" expanded="false" />
                 <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
                 <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
                 <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-                <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
                 <element signature="class#MainMenu#0" expanded="false" />
                 <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-                <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
                 <element signature="class#Main#0" expanded="false" />
-                <element signature="method#main#0;class#Main#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Float.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/src/java.base/java/lang/Float.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,6 +66,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>System.out.println(&quot;\n Result: \n&quot;);</find>
+      <find>infinity</find>
     </findStrings>
     <replaceStrings>
       <replace>checkedInput.inputValidator();</replace>
@@ -111,10 +119,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,9 +290,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28177965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43220338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -293,13 +300,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4088983" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -308,9 +316,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="54" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>divideXYout</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
@@ -318,24 +335,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -345,24 +359,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -372,24 +383,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -399,24 +407,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -426,24 +431,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -453,24 +455,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -480,24 +479,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -507,24 +503,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -534,24 +527,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -561,51 +551,87 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="226" column="1" lean-forward="true" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7382#0" expanded="true" />
+            <element signature="e#0#7647#0" expanded="true" />
             <element signature="class#InputValidator#0" expanded="false" />
             <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
             <element signature="class#InputValueContainer#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
             <element signature="class#MenuItem#0" expanded="false" />
             <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
             <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
-            <element signature="method#divideXY#0;class#MenuItem#0" expanded="false" />
             <element signature="class#MainMenu#0" expanded="false" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
-            <element signature="method#initializeMainMenu#0;class#MainMenu#0" expanded="false" />
             <element signature="class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/src/java.base/module-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5989">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/src/java.base/java/lang/Float.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="233" column="1" lean-forward="true" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#7647#0" expanded="true" />
+            <element signature="class#InputValidator#0" expanded="false" />
+            <element signature="method#validateInput#0;class#InputValidator#0" expanded="false" />
+            <element signature="class#InputValueContainer#0" expanded="false" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="class#MenuItem#0" expanded="false" />
+            <element signature="method#addXY#0;class#MenuItem#0" expanded="false" />
+            <element signature="method#subtractXY#0;class#MenuItem#0" expanded="false" />
+            <element signature="method#multiplyXY#0;class#MenuItem#0" expanded="false" />
+            <element signature="class#MainMenu#0" expanded="false" />
+            <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
+            <element signature="class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

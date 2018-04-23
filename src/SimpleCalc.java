@@ -1,6 +1,4 @@
 // - dodać obcinanie wyniku - jeśli wychodzi liczba całkowita, nie powinno wyświetlać przecinka i zera
-// - metody dodawania i odejmowania - przyjrzeć się im
-// - gettery i settery dla klas
 // - sout skrócić - zamiast System.out.println("coś") do np.: print(coś)
 
 import java.io.BufferedReader;
@@ -8,6 +6,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.InputMismatchException;
+
+import static java.lang.Float.POSITIVE_INFINITY;
 
 // klasa obsługująca sprawdzanie danych wprowadzonych przez użytkownika
 class InputValidator {
@@ -70,8 +70,6 @@ class InputValueContainer {
 
 // klasa obsługująca poszczególne opcje menu
 class MenuItem {
-    private InputValidator checkedInputX = new InputValidator();
-    private InputValidator checkedInputY = new InputValidator();
     private InputValueContainer value1 = new InputValueContainer();
     private InputValueContainer value2 = new InputValueContainer();
 
@@ -159,7 +157,8 @@ class MainMenu {
 
     public void initializeMainMenu() {
         // zmienna sterująca menu - sterowana przez użytkownika
-        int menuControl = -1;
+        int menuControl;
+        // zmienna wyłączająca menu
         boolean switchOnOff = true;
 
         // inicjalizacja obiektu menu
@@ -174,9 +173,11 @@ class MainMenu {
                 menuControl = read.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4 or 5.");
+                // czyszczenie wartości dla zmiennej sterującej menu; inaczej pętla wykorzysta ostatnią wybraną wartość.
                 menuControl = -1;
             }
 
+            // główny element sterowania menu
             if (menuControl == 1){
                 System.out.println("\n Addition result: " + option.addXY() + "\n");
                 this.displayMainMenu();
@@ -188,13 +189,19 @@ class MainMenu {
                 this.displayMainMenu();
             } else if (menuControl == 4) {
 
-                // wyłapanie dzielenia przez 0 - blok try/catch przeniesiony poza moduł sprawdzający kod
-                try {
-                    System.out.println("\n Division result: " + option.divideXY() + "\n");
-                    this.displayMainMenu();
-                } catch (ArithmeticException e) {
-                    System.out.println("Please keep in mind, that dividing by zero is not allowed in math. Result forced in zero.");
+                /*
+                obsługa dzielenia przez zero
+                zmienna divideByZeroCheck ma przechować wynik dzielenia, żeby sprawdzić, czy wychodzi nieskończoność.
+                Jeśli tak, ma być podany alternatywny komunikat.
+                */
+                float divideByZeroCheck = option.divideXY();
+                if (divideByZeroCheck == POSITIVE_INFINITY) {
+                    System.out.println("\n Division did result in positive infinity, possibly because of dividing by zero." + "\n");
+                } else {
+                    System.out.println("\n Division result: " + divideByZeroCheck + "\n");
                 }
+
+                this.displayMainMenu();
 
             } else if (menuControl > 4) {
                 System.out.println("\n ERROR - Wrong value picked. You're in main menu." + "\n Please enter value between 0 up to 5" + "\n");
