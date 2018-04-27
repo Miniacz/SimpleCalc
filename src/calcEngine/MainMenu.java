@@ -15,13 +15,13 @@ public class MainMenu {
         // main menu + plus info
         System.out.println(
                 "\n \n" +
-                        "Please pick menu option:" +
-                        "\n 1 - adds two numbers" +
-                        "\n 2 - subtracts two numbers" +
-                        "\n 3 - multiplies two numbers" +
-                        "\n 4 - divides two numbers" +
-                        "\n 0 - quit" +
-                        "\n \n");
+                "Please pick menu option:" +
+                "\n 1 - adds two numbers" +
+                "\n 2 - subtracts two numbers" +
+                "\n 3 - multiplies two numbers" +
+                "\n 4 - divides two numbers" +
+                "\n 0 - quit" +
+                "\n \n");
     }
 
     public void initializeMainMenu() {

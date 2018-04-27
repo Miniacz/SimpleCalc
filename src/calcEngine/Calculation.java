@@ -7,7 +7,7 @@ package calcEngine;
 public class Calculation {
     private InputValueContainer value = new InputValueContainer();
 
-    // == metoda dla dodawania ==
+    //  metoda dla dodawania 
     public float addXY(){
         float addXYout;
 
@@ -22,7 +22,7 @@ public class Calculation {
         return addXYout;
     }
 
-    // == metoda dla odejmowania ==
+    //  metoda dla odejmowania 
     public float subtractXY(){
         float subtractXYout;
 
@@ -37,7 +37,7 @@ public class Calculation {
         return subtractXYout;
     }
 
-    // == metoda dla mnożenia ==
+    //  metoda dla mnożenia 
     public float multiplyXY(){
         float multiplyXYout;
 
@@ -52,7 +52,7 @@ public class Calculation {
         return multiplyXYout;
     }
 
-    // == metoda dla dzielenia ==
+    //  metoda dla dzielenia 
     public float divideXY(){
         float divideXYout;
 

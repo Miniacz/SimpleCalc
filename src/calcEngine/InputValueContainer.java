@@ -5,7 +5,7 @@
 package calcEngine;
 
 public class InputValueContainer {
-    private InputValidator checkedInputX = new InputValidator();
+    private InputValidator checkedInput = new InputValidator();
     private float x;
     private float y;
 
@@ -21,7 +21,7 @@ public class InputValueContainer {
     }
 
     private void setX() {
-        this.x = checkedInputX.validateInput();
+        this.x = checkedInput.validateInput();
     }
 
     public float getY() {
@@ -29,6 +29,6 @@ public class InputValueContainer {
     }
 
     private void setY() {
-        this.y = checkedInputX.validateInput();
+        this.y = checkedInput.validateInput();
     }
 }
