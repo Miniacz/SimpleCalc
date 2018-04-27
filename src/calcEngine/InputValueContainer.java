@@ -1,21 +1,26 @@
 /*
-* klasa służąca do ustawiania i pobierana inputu
+* Klasa służąca do ustawiania i pobierana inputu
 * */
 
 package calcEngine;
 
 public class InputValueContainer {
     private InputValidator checkedInputX = new InputValidator();
-    private InputValidator checkedInputY = new InputValidator();
     private float x;
     private float y;
+
+    public void collectInput() {
+        System.out.println("\n Enter first number: \n");
+        this.setX();
+        System.out.println("\n Enter second number: \n");
+        this.setY();
+    }
 
     public float getX() {
         return x;
     }
 
-    public void setX() {
-        System.out.println("\n Enter first number: \n");
+    private void setX() {
         this.x = checkedInputX.validateInput();
     }
 
@@ -23,8 +28,7 @@ public class InputValueContainer {
         return y;
     }
 
-    public void setY() {
-        System.out.println("\n Enter second number: \n");
-        this.y = checkedInputY.validateInput();
+    private void setY() {
+        this.y = checkedInputX.validateInput();
     }
 }

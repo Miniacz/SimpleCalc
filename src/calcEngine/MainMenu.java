@@ -1,5 +1,5 @@
 /*
-* klasa obsługująca główną pętlę menu
+* Klasa obsługująca główną pętlę menu
 * */
 
 package calcEngine;
@@ -7,7 +7,7 @@ package calcEngine;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static java.lang.Float.POSITIVE_INFINITY;
+import static java.lang.Float.POSITIVE_INFINITY; // zaimportowana stała nieskończona dla floata
 
 public class MainMenu {
 
@@ -31,7 +31,7 @@ public class MainMenu {
         boolean switchOnOff = true;
 
         // inicjalizacja obiektu menu
-        MenuItem option = new MenuItem();
+        Calculation option = new Calculation();
         this.displayMainMenu();
 
         while (switchOnOff){
@@ -73,7 +73,7 @@ public class MainMenu {
                 this.displayMainMenu();
 
             } else if (menuControl > 4) {
-                System.out.println("\n ERROR - Wrong value picked. You're in main menu." + "\n Please enter value between 0 up to 5" + "\n");
+                System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
             }
 
             if (menuControl == 0){

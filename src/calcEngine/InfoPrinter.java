@@ -1,11 +1,11 @@
 /*
-* Klasa zastępująca sout - jako element "zadania na 6"
+* Klasa zastępująca sout - jako element dodatkowego zadania lel
 * */
 
 package calcEngine;
 
 public class InfoPrinter {
-    public void print(String x) {
+    public void sout(String x) {
         System.out.println(x);
     }
 }

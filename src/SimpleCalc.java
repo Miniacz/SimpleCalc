@@ -1,12 +1,12 @@
 /*
-* główny moduł programu
+* Główny moduł programu
 * */
 
 /* TO DO
 - dodać obcinanie wyniku - jeśli wychodzi liczba całkowita, nie powinno wyświetlać przecinka i zera
 */
 
-import calcEngine.*; // import paczki z klasami dla obsługi wszyskitch elementów kalkulatora
+import calcEngine.*; // import paczki z klasami dla obsługi wszystkich elementów kalkulatora
 
 class Main {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ class Main {
         InfoPrinter obj = new InfoPrinter();
 
         // czysto estetyczne
-        obj.print(
+        obj.sout(
                 "\n ==================================================="
                 + "\n TURBO CALC 6000" + " by Miniacz"
                 + "\n ==================================================="
