@@ -47,7 +47,7 @@ public class MainMenu {
             }
 
             // główny element sterowania menu
-            if (menuControl == 1){
+            if (menuControl == 1) {
                 System.out.println("\n Addition result: " + option.addXY() + "\n");
                 this.displayMainMenu();
             } else if (menuControl == 2) {
@@ -76,7 +76,7 @@ public class MainMenu {
                 System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
             }
 
-            if (menuControl == 0){
+            if (menuControl == 0) {
                 System.out.println("\n" + "Bye!" + "\n");
                 switchOnOff = false;
             }
