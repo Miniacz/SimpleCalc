@@ -7,7 +7,7 @@ package calcEngine;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static java.lang.Float.POSITIVE_INFINITY; // zaimportowana stała nieskończona dla floata
+
 
 public class MainMenu {
 
@@ -58,22 +58,8 @@ public class MainMenu {
                 option.multiplyXY();
                 this.displayMainMenu();
             } else if (menuControl == 4) {
-
-                /*
-                obsługa dzielenia przez zero
-                zmienna divideByZeroCheck ma przechować wynik dzielenia, żeby sprawdzić, czy wychodzi nieskończoność.
-                Jeśli tak, ma być podany alternatywny komunikat.
-                */
                 option.divideXY();
-//                double divideByZeroCheck = 0;
-//                if (divideByZeroCheck == POSITIVE_INFINITY) {
-//                    System.out.println("\n Division did result in positive infinity, possibly because of dividing by zero." + "\n");
-//                } else {
-////                    System.out.println("\n Division result: " + divideByZeroCheck + "\n");
-//                }
-
                 this.displayMainMenu();
-
             } else if (menuControl == 5) {
                 System.out.println("\n Current value in memory: " + option.getMemory());
                 this.displayMainMenu();

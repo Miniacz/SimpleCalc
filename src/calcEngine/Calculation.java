@@ -4,6 +4,8 @@
 
 package calcEngine;
 
+import static java.lang.Float.POSITIVE_INFINITY; // zaimportowana stała nieskończona dla floata
+
 public class Calculation {
 
     private InputValueContainer value = new InputValueContainer();
@@ -53,7 +55,7 @@ public class Calculation {
     }
 
 
-    public double getDivResult() {
+    private double getDivResult() {
         return divResult;
     }
 
@@ -124,7 +126,12 @@ public class Calculation {
 
         value.collectInput();
         divResult = value.getX() / value.getY();
-        System.out.println("\n Subtraction result: " + this.getDivResult());
+        double divideByZeroCheck = this.getDivResult();
+        if (divideByZeroCheck == POSITIVE_INFINITY) {
+                System.out.println("\n Division did result in positive infinity, possibly because of dividing by zero." + "\n");
+            } else {
+                System.out.println("\n Division result: " + divideByZeroCheck + "\n");
+            }
 
         this.memoryQuery(mltResult);
     }
