@@ -1,46 +1,13 @@
 /*
-* Klasa służąca do ustawiania i pobierana inputu
-* */
+ * Memory handling class
+ * */
 
 package calcEngine;
 
-public class InputValueContainer {
+public class Memory {
     private InputValidator checkedInput = new InputValidator();
-    private double x;
-    private double y;
-    private double memory = 0;
 
-
-    /*
-     * Input handling section
-     * */
-
-    public void collectInput() {
-        System.out.println("\n Enter first number: \n");
-        this.setX();
-        System.out.println("\n Enter second number: \n");
-        this.setY();
-    }
-
-    public double getX() {
-        return x;
-    }
-
-    private void setX() {
-        this.x = checkedInput.validateInput();
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    private void setY() {
-        this.y = checkedInput.validateInput();
-    }
-
-    /*
-    * Memory handling section
-    * */
+    private static double memory = 0;
 
     // Pobiera jako argument wartość, która ma być wprowadzona do pamięci podręcznej kalkulatora
     public void memoryQuery(double memoryInput) {
@@ -48,14 +15,14 @@ public class InputValueContainer {
 
         System.out.println(
                 "\n Do You want to save the result?" +
-                        "\n Please use numbers 1 or 2." +
-                        "\n 1: Yes." +
-                        "\n 2: No." + "\n");
+                "\n Please use numbers 1 or 2." +
+                "\n 1: Yes." +
+                "\n 2: No." + "\n");
 
         while (queryOnOff) {
-            this.x = checkedInput.validateInput();
+            double x = checkedInput.validateInput();
             if (x == 1) {
-                this.memory = memoryInput;
+                memory = memoryInput;
                 // System.out.println("\n Memory value changed to: " + this.getMemory());
                 queryOnOff = false;
             } else if (x == 2) {
@@ -68,7 +35,7 @@ public class InputValueContainer {
 
     }
 
-    public double getMemory() {
+    public static double getMemory() {
         return memory;
     }
 

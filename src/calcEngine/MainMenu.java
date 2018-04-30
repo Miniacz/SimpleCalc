@@ -20,6 +20,7 @@ public class MainMenu {
                 "\n 2 - subtracts two numbers" +
                 "\n 3 - multiplies two numbers" +
                 "\n 4 - divides two numbers" +
+                "\n 5 - display current memory status" +
                 "\n 0 - quit" +
                 "\n \n");
     }
@@ -48,13 +49,13 @@ public class MainMenu {
 
             // główny element sterowania menu
             if (menuControl == 1) {
-                System.out.println("\n Addition result: " + option.addXY() + "\n");
+                option.addXY();
                 this.displayMainMenu();
             } else if (menuControl == 2) {
-                System.out.println("\n Subtraction result: " + option.subtractXY() + "\n");
+                option.subtractXY();
                 this.displayMainMenu();
             } else if (menuControl == 3) {
-                System.out.println("\n Multiplication result: " + option.multiplyXY() + "\n");
+                option.multiplyXY();
                 this.displayMainMenu();
             } else if (menuControl == 4) {
 
@@ -63,16 +64,20 @@ public class MainMenu {
                 zmienna divideByZeroCheck ma przechować wynik dzielenia, żeby sprawdzić, czy wychodzi nieskończoność.
                 Jeśli tak, ma być podany alternatywny komunikat.
                 */
-                float divideByZeroCheck = option.divideXY();
-                if (divideByZeroCheck == POSITIVE_INFINITY) {
-                    System.out.println("\n Division did result in positive infinity, possibly because of dividing by zero." + "\n");
-                } else {
-                    System.out.println("\n Division result: " + divideByZeroCheck + "\n");
-                }
+                option.divideXY();
+//                double divideByZeroCheck = 0;
+//                if (divideByZeroCheck == POSITIVE_INFINITY) {
+//                    System.out.println("\n Division did result in positive infinity, possibly because of dividing by zero." + "\n");
+//                } else {
+////                    System.out.println("\n Division result: " + divideByZeroCheck + "\n");
+//                }
 
                 this.displayMainMenu();
 
-            } else if (menuControl > 4) {
+            } else if (menuControl == 5) {
+                System.out.println("\n Current value in memory: " + option.getMemory());
+                this.displayMainMenu();
+            } else if (menuControl > 5) {
                 System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
             }
 

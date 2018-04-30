@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6451b0a9-5dde-4723-ba67-aed314e394ed" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleCalc.java" afterPath="$PROJECT_DIR$/src/SimpleCalc.java" />
+      <change beforePath="$PROJECT_DIR$/src/calcEngine/Calculation.java" afterPath="$PROJECT_DIR$/src/calcEngine/Calculation.java" />
+      <change beforePath="$PROJECT_DIR$/src/calcEngine/InfoPrinter.java" afterPath="$PROJECT_DIR$/src/calcEngine/InfoPrinter.java" />
+      <change beforePath="$PROJECT_DIR$/src/calcEngine/InputValidator.java" afterPath="$PROJECT_DIR$/src/calcEngine/InputValidator.java" />
+      <change beforePath="$PROJECT_DIR$/src/calcEngine/InputValueContainer.java" afterPath="$PROJECT_DIR$/src/calcEngine/InputValueContainer.java" />
       <change beforePath="$PROJECT_DIR$/src/calcEngine/MainMenu.java" afterPath="$PROJECT_DIR$/src/calcEngine/MainMenu.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,33 +26,39 @@
       <file leaf-file-name="SimpleCalc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+            <state relative-caret-position="301">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
-                <element signature="method#subtractXY#0;class#Calculation#0" expanded="false" />
-                <element signature="method#divideXY#0;class#Calculation#0" expanded="false" />
+                <element signature="e#0#767#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Calculation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#4413#0" expanded="true" />
+                <element signature="method#addXY#0;class#Calculation#0" expanded="false" />
+                <element signature="method#subtractXY#0;class#Calculation#0" expanded="false" />
+                <element signature="method#multiplyXY#0;class#Calculation#0" expanded="false" />
+                <element signature="method#divideXY#0;class#Calculation#0" expanded="false" />
+                <element signature="method#memoryQuery#0;class#Calculation#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="78" column="34" lean-forward="false" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="118">
+              <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
               <folding>
-                <element signature="e#0#3233#0" expanded="true" />
+                <element signature="e#0#3331#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
               </folding>
@@ -54,21 +66,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputValueContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValueContainer.java">
+      <file leaf-file-name="Memory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calcEngine/Memory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
-                <element signature="e#0#681#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#0#1328#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,10 +81,10 @@
       <file leaf-file-name="InputValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
               <folding>
-                <element signature="e#0#1196#0" expanded="true" />
+                <element signature="e#0#1475#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -90,12 +94,26 @@
       <file leaf-file-name="InfoPrinter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="119">
+              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding>
-                <element signature="e#0#193#0" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#0#194#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#190#191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputValueContainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValueContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#1977#0" expanded="true" />
+                <element signature="method#collectInput#0;class#InputValueContainer#0" expanded="false" />
+                <element signature="method#memoryQuery#0;class#InputValueContainer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -115,11 +133,18 @@
       <find>System.out.println(&quot;\n Result: \n&quot;);</find>
       <find>infinity</find>
       <find>checkedInputX</find>
+      <find>addResult</find>
+      <find>float</find>
+      <find>multiplyXYout</find>
+      <find>divideXYout</find>
     </findStrings>
     <replaceStrings>
       <replace>checkedInput.inputValidator();</replace>
       <replace>value</replace>
       <replace>checkedInput</replace>
+      <replace>double</replace>
+      <replace>mltResult</replace>
+      <replace>divResult</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -135,12 +160,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/test.java" />
-        <option value="$PROJECT_DIR$/src/calcEngine/InputValidator.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/MenuItem.java" />
-        <option value="$PROJECT_DIR$/src/SimpleCalc.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/InfoPrinter.java" />
-        <option value="$PROJECT_DIR$/src/calcEngine/Calculation.java" />
+        <option value="$PROJECT_DIR$/src/SimpleCalc.java" />
+        <option value="$PROJECT_DIR$/src/calcEngine/InputValidator.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/InputValueContainer.java" />
+        <option value="$PROJECT_DIR$/src/calcEngine/Memory.java" />
+        <option value="$PROJECT_DIR$/src/calcEngine/Calculation.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/MainMenu.java" />
       </list>
     </option>
@@ -166,7 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,9 +221,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,12 +385,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43220338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43220338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -380,7 +407,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -391,7 +417,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="79" />
+      <option name="time" value="84" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -407,9 +433,83 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#4413#0" expanded="true" />
+            <element signature="method#addXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#subtractXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#multiplyXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#divideXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#memoryQuery#0;class#Calculation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValueContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1977#0" expanded="true" />
+            <element signature="method#collectInput#0;class#InputValueContainer#0" expanded="false" />
+            <element signature="method#memoryQuery#0;class#InputValueContainer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3331#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1475#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#194#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -418,7 +518,7 @@
         <state relative-caret-position="391">
           <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
-            <element signature="e#0#3233#0" expanded="true" />
+            <element signature="e#0#3331#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
           </folding>
@@ -430,15 +530,9 @@
         <state relative-caret-position="340">
           <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
-            <element signature="e#0#681#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#0#1977#0" expanded="true" />
+            <element signature="method#collectInput#0;class#InputValueContainer#0" expanded="false" />
+            <element signature="method#memoryQuery#0;class#InputValueContainer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -448,7 +542,7 @@
         <state relative-caret-position="612">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1196#0" expanded="true" />
+            <element signature="e#0#1475#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -459,9 +553,9 @@
         <state relative-caret-position="85">
           <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
-            <element signature="e#0#193#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#0#194#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -471,8 +565,12 @@
         <state relative-caret-position="357">
           <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
+            <element signature="e#0#4413#0" expanded="true" />
+            <element signature="method#addXY#0;class#Calculation#0" expanded="false" />
             <element signature="method#subtractXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#multiplyXY#0;class#Calculation#0" expanded="false" />
             <element signature="method#divideXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#memoryQuery#0;class#Calculation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -481,7 +579,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,7 +591,7 @@
         <state relative-caret-position="34">
           <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding>
-            <element signature="e#0#3233#0" expanded="true" />
+            <element signature="e#0#3331#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
           </folding>
@@ -503,15 +603,9 @@
         <state relative-caret-position="119">
           <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="e#0#681#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#0#1977#0" expanded="true" />
+            <element signature="method#collectInput#0;class#InputValueContainer#0" expanded="false" />
+            <element signature="method#memoryQuery#0;class#InputValueContainer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -521,7 +615,7 @@
         <state relative-caret-position="17">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1196#0" expanded="true" />
+            <element signature="e#0#1475#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -532,9 +626,9 @@
         <state relative-caret-position="119">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#0#193#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#0#194#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,7 +637,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -551,7 +647,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -566,7 +664,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -574,7 +674,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -582,7 +684,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -590,7 +694,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -598,7 +704,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -606,7 +714,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -614,7 +724,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -622,7 +734,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -630,7 +744,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,7 +754,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -646,7 +764,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,43 +787,24 @@
     <entry file="file://$PROJECT_DIR$/src/test.java" />
     <entry file="file://$PROJECT_DIR$/src/calcEngine/test.java" />
     <entry file="file://$PROJECT_DIR$/src/calcEngine/MenuItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding>
-            <element signature="method#subtractXY#0;class#Calculation#0" expanded="false" />
-            <element signature="method#divideXY#0;class#Calculation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
-            <element signature="e#0#193#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#0#194#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
           <folding>
-            <element signature="e#0#1196#0" expanded="true" />
+            <element signature="e#0#1475#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -711,30 +812,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValueContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="63" />
           <folding>
-            <element signature="e#0#681#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#0#1977#0" expanded="true" />
+            <element signature="method#collectInput#0;class#InputValueContainer#0" expanded="false" />
+            <element signature="method#memoryQuery#0;class#InputValueContainer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="78" column="34" lean-forward="false" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        <state relative-caret-position="118">
+          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
           <folding>
-            <element signature="e#0#3233#0" expanded="true" />
+            <element signature="e#0#3331#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="method#displayMainMenu#0;class#MainMenu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/Memory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#1328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#4413#0" expanded="true" />
+            <element signature="method#addXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#subtractXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#multiplyXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#divideXY#0;class#Calculation#0" expanded="false" />
+            <element signature="method#memoryQuery#0;class#Calculation#0" expanded="false" />
           </folding>
         </state>
       </provider>

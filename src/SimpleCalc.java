@@ -14,7 +14,7 @@ class Main {
         InfoPrinter obj = new InfoPrinter();
 
         // czysto estetyczne
-        obj.sout(
+        obj.print(
                 "\n ==================================================="
                 + "\n TURBO CALC 6000" + " by Miniacz"
                 + "\n ==================================================="
