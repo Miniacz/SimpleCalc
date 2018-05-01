@@ -17,8 +17,7 @@ public class Calculation {
     /*
     * Variables designed to contain calculation results
     * */
-    
-    // Inicjalizacja jako 0, żeby uniknąć NullPointerException w tani sposób
+
     private double addResult = 0;
     private double subResult = 0;
     private double mltResult = 0;
