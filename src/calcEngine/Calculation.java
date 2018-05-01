@@ -78,7 +78,7 @@ public class Calculation {
         addResult = value.getX() + value.getY();
         System.out.println("\n Addition result: " + this.getAddResult());
 
-        this.memoryQuery(addResult);
+        Memory.memoryQuery(addResult);
 
     }
 
@@ -93,9 +93,9 @@ public class Calculation {
 
         value.collectInput();
         subResult = value.getX() - value.getY();
-        System.out.println("\n Subtraction result: " + this.getMltResult());
+        System.out.println("\n Subtraction result: " + this.getSubXYResult());
 
-        this.memoryQuery(mltResult);
+        Memory.memoryQuery(subResult);
     }
 
     //  metoda dla mnożenia 
@@ -109,9 +109,9 @@ public class Calculation {
 
         value.collectInput();
         mltResult = value.getX() * value.getY();
-        System.out.println("\n Subtraction result: " + this.getSubXYResult());
+        System.out.println("\n Multiply result: " + this.getMltResult());
 
-        this.memoryQuery(mltResult);
+        Memory.memoryQuery(mltResult);
     }
 
     //  metoda dla dzielenia 
@@ -132,7 +132,7 @@ public class Calculation {
                 System.out.println("\n Division result: " + divideByZeroCheck + "\n");
             }
 
-        this.memoryQuery(mltResult);
+        Memory.memoryQuery(divResult);
     }
 
     /*

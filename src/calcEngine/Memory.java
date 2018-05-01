@@ -4,13 +4,17 @@
 
 package calcEngine;
 
-public class Memory {
-    private InputValidator checkedInput = new InputValidator();
+// klasa zdefiniowana jako abstrakcyjna, żeby nie tworzyć kolejnych instancji klasy, tylko stworzyć ją na wzór modułu pamięci (pojedynczego), dostępnego dla każdego elementu układu.
+public abstract class Memory {
 
-    private static double memory = 0;
+    private static InputValidator checkedInput = new InputValidator();
+    private static double memoryContainer = 0;
+    // zmienna, która ma przechować zakres danych do późniejszego użycia
+    private static double[] memoryArray;
 
     // Pobiera jako argument wartość, która ma być wprowadzona do pamięci podręcznej kalkulatora
-    public void memoryQuery(double memoryInput) {
+    public static void memoryQuery(double memoryInput) {
+        // true - query works / is On, false - query stops working / is Off
         boolean queryOnOff = true;
 
         System.out.println(
@@ -22,7 +26,7 @@ public class Memory {
         while (queryOnOff) {
             double x = checkedInput.validateInput();
             if (x == 1) {
-                memory = memoryInput;
+                memoryContainer = memoryInput;
                 // System.out.println("\n Memory value changed to: " + this.getMemory());
                 queryOnOff = false;
             } else if (x == 2) {
@@ -35,11 +39,11 @@ public class Memory {
 
     }
 
-    public static double getMemory() {
-        return memory;
+    public static double getMemoryValue() {
+        return memoryContainer;
     }
 
-    private void setMemory(double memory) {
-        this.memory = memory;
+    public static void setMemoryValue(double memoryChange) {
+        memoryContainer = memoryChange;
     }
 }

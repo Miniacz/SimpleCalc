@@ -61,7 +61,7 @@ public class MainMenu {
                 option.divideXY();
                 this.displayMainMenu();
             } else if (menuControl == 5) {
-                System.out.println("\n Current value in memory: " + option.getMemory());
+                System.out.println("\n Current value in memory: " + Memory.getMemoryValue());
                 this.displayMainMenu();
             } else if (menuControl > 5) {
                 System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
