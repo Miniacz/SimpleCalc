@@ -8,11 +8,47 @@ package calcEngine;
 public abstract class Memory {
 
     private static InputValidator checkedInput = new InputValidator();
-    private static double memoryContainer = 0;
-    // zmienna, która ma przechować zakres danych do późniejszego użycia
-    private static double[] memoryArray;
 
-    // Pobiera jako argument wartość, która ma być wprowadzona do pamięci podręcznej kalkulatora
+    // zmienna, która ma przechować zakres danych do późniejszego użycia
+    public static double[] memoryArray = {
+            0,
+            0,
+            0,
+            0,
+            0
+    };
+
+    // zmienna
+    private static double memoryContainer = 0;
+
+    /*
+    * Getters and setters
+    * */
+
+    // g/s dla zakresu wartości w pamięci
+    public static double[] getMemoryArray(int index) {
+        return memoryArray;
+    }
+
+    public static void setMemoryArray(double[] memoryArray) {
+        Memory.memoryArray = memoryArray;
+    }
+
+
+    // g/s dla pojednyczej wartości w pamięci
+    public static double getMemoryValue() {
+        return memoryContainer;
+    }
+
+    public static void setMemoryValue(double memoryChange) {
+        memoryContainer = memoryChange;
+    }
+
+    /*
+    * Memory access methods
+    * */
+
+    // Pobiera jako argument wartość, która ma być wprowadzona do pamięci podręcznej kalkulatora, dla pojedyczej wartości (memoryContainer)
     public static void memoryQuery(double memoryInput) {
         // true - query works / is On, false - query stops working / is Off
         boolean queryOnOff = true;
@@ -39,11 +75,5 @@ public abstract class Memory {
 
     }
 
-    public static double getMemoryValue() {
-        return memoryContainer;
-    }
 
-    public static void setMemoryValue(double memoryChange) {
-        memoryContainer = memoryChange;
-    }
 }

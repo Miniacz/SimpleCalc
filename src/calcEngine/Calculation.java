@@ -4,6 +4,9 @@
 
 package calcEngine;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 import static java.lang.Float.POSITIVE_INFINITY; // zaimportowana stała nieskończona dla floata
 
 public class Calculation {
@@ -79,7 +82,7 @@ public class Calculation {
         System.out.println("\n Addition result: " + this.getAddResult());
 
         Memory.memoryQuery(addResult);
-
+//        System.out.println("Array content at index 1: " + Arrays.toString(Memory.memoryArray));
     }
 
     //  metoda dla odejmowania 
@@ -112,6 +115,7 @@ public class Calculation {
         System.out.println("\n Multiply result: " + this.getMltResult());
 
         Memory.memoryQuery(mltResult);
+
     }
 
     //  metoda dla dzielenia 
