@@ -20,7 +20,8 @@ public class MainMenu {
                 "\n 2 - subtracts two numbers" +
                 "\n 3 - multiplies two numbers" +
                 "\n 4 - divides two numbers" +
-                "\n 5 - display current memory status" +
+                "\n 5 - display current single object memory status" +
+                "\n 6 - display element of multiple object memory" +
                 "\n 0 - quit" +
                 "\n \n");
     }
@@ -61,9 +62,12 @@ public class MainMenu {
                 option.divideXY();
                 this.displayMainMenu();
             } else if (menuControl == 5) {
-                System.out.println("\n Current value in memory: " + Memory.getMemoryValue());
+                System.out.println("\n Current value in single object memory: " + Memory.getMemoryValue());
                 this.displayMainMenu();
-            } else if (menuControl > 5) {
+            } else if (menuControl == 6) {
+                Memory.memoryQuery();
+                this.displayMainMenu();
+            } else if (menuControl > 6) {
                 System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
             }
 

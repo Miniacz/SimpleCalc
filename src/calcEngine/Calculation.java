@@ -14,7 +14,7 @@ public class Calculation {
     private InputValueContainer value = new InputValueContainer();
     private InputValidator checkedInput = new InputValidator();
 
-    // Zmienna, która ma działać jak pamięć podręczna kalkulatora
+    // Zmienna, która ma działać jak pamięć podręczna kalkulatora - obecnie zbędna
     private double memory = 0;
 
     /*
@@ -82,7 +82,7 @@ public class Calculation {
         System.out.println("\n Addition result: " + this.getAddResult());
 
         Memory.memoryQuery(addResult);
-//        System.out.println("Array content at index 1: " + Arrays.toString(Memory.memoryArray));
+
     }
 
     //  metoda dla odejmowania 
@@ -138,6 +138,13 @@ public class Calculation {
 
         Memory.memoryQuery(divResult);
     }
+
+
+    /*
+    * Sekcja kodu zostawiona jako przykład starszej implementacji
+    * Wcześniej pamięć była częścią klasy Calculation, ale z racji niepasującego typu operacji -
+    * - zapis w pamięci nie jest kalkulacją - uznałem, że lepiej jest stworzyć nową klasę.
+    * */
 
     /*
     * Memory handling
