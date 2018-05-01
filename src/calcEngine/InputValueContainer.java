@@ -35,5 +35,5 @@ public class InputValueContainer {
     private void setY() {
         this.y = checkedInput.validateInput();
     }
-    
+
 }

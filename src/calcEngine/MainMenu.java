@@ -43,7 +43,7 @@ public class MainMenu {
                 Scanner read = new Scanner(System.in);
                 menuControl = read.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4 or 5.");
+                System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4,5 or 6.");
                 // czyszczenie wartości dla zmiennej sterującej menu; inaczej pętla wykorzysta ostatnią wybraną wartość.
                 menuControl = -1;
             }
@@ -68,7 +68,7 @@ public class MainMenu {
                 Memory.memoryQuery();
                 this.displayMainMenu();
             } else if (menuControl > 6) {
-                System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
+                System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 6" + "\n");
             }
 
             if (menuControl == 0) {

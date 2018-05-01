@@ -54,7 +54,7 @@ public abstract class Memory {
         boolean queryOnOff = true;
 
         System.out.println(
-                "\n Do You want to save the result?" +
+                "\n Do You want to save the result? Result will be stored in single object memory." +
                 "\n Please use numbers 1 or 2." +
                 "\n 1: Yes." +
                 "\n 2: No." + "\n");
