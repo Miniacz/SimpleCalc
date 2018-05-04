@@ -2,6 +2,14 @@
 * Klasa obsługująca poszczególne kalkulacje / obliczenia
 * */
 
+/*TO DO
+* Złączyć metodę dodawania i odejmowania (można to zrobić)
+* W programowaniu powinno się unikać powielenia kodu -
+* nie powinno być sytuacji, gdy powtarza się kod,
+* lub jest dosłownie kopia linii ze zmianą jednego znaku
+* to oznacza, że można to złączyć w prostszą logikę
+* */
+
 package calcEngine;
 
 import java.lang.reflect.Array;
@@ -18,7 +26,7 @@ public class Calculation {
     private double memory = 0;
 
     /*
-    * Variables designed to contain calculation results
+    * Variables designed to contain calculation results - zmienne do usunięcia - patrz
     * */
 
     private double addResult = 0;
@@ -68,15 +76,53 @@ public class Calculation {
     /*
     * Calculation methods
     * */
-    
+
+    // zbiorcza metoda dla dodawania / odejmowania
+
+    public void add_subXY(int type) {
+
+        switch (type) {
+            case 1:
+                System.out.println(
+                        "\n ============ ADD ============" +
+                        "\n adds two numbers given by user " +
+                        "\n ============================="
+                );
+                break;
+            case 2:
+                System.out.println(
+                        "\n ============ SUBTRACT ============" +
+                        "\n subtracts two numbers given by user " +
+                        "\n =================================="
+                );
+        }
+
+        value.collectInput();
+
+        switch (type) {
+            case 1:
+                addResult = value.getX() + value.getY();
+                System.out.println("\n Addition result: " + this.getAddResult());
+                Memory.memoryQuery(addResult);
+                break;
+            case 2:
+                subResult = value.getX() - value.getY();
+                System.out.println("\n Subtraction result: " + this.getSubXYResult());
+                Memory.memoryQuery(subResult);
+        }
+
+    }
+
     //  metoda dla dodawania
     public void addXY() {
+
         System.out.println(
                 "\n ============ ADD ============" +
                 "\n adds two numbers given by user " +
                 "\n ============================="
         );
 
+        // można usunąć addResult na rzecz Memory.memoryQuery(value.getX()+value.getY())
         value.collectInput();
         addResult = value.getX() + value.getY();
         System.out.println("\n Addition result: " + this.getAddResult());
@@ -139,51 +185,4 @@ public class Calculation {
         Memory.memoryQuery(divResult);
     }
 
-
-    /*
-    * Sekcja kodu zostawiona jako przykład starszej implementacji
-    * Wcześniej pamięć była częścią klasy Calculation, ale z racji niepasującego typu operacji -
-    * - zapis w pamięci nie jest kalkulacją - uznałem, że lepiej jest stworzyć nową klasę.
-    * */
-
-    /*
-    * Memory handling
-    * */
-
-    private void memoryQuery(double memoryInput) {
-        boolean queryOnOff = true;
-
-        System.out.println(
-                "\n Do You want to save the result?" +
-                "\n Please use numbers 1 or 2." +
-                "\n 1: Yes." +
-                "\n 2: No." + "\n");
-
-        while (queryOnOff) {
-            double x = checkedInput.validateInput();
-            if (x == 1) {
-                memory = memoryInput;
-                // System.out.println("\n Memory value changed to: " + this.getMemory());
-                queryOnOff = false;
-            } else if (x == 2) {
-                // System.out.println("\n Memory value remained unchanged. Current value is: " + this.getMemory());
-                queryOnOff = false;
-            } else {
-                System.out.println("\n You have entered an invalid number. Please use 1 or 2. \n");
-            }
-        }
-
-    }
-    
-    /*
-    * Memory getters and setters
-    * */
-
-    public double getMemory() {
-        return memory;
-    }
-
-    private void setMemory(double memory) {
-        this.memory = memory;
-    }
 }

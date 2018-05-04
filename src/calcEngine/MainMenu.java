@@ -50,10 +50,10 @@ public class MainMenu {
 
             // główny element sterowania menu
             if (menuControl == 1) {
-                option.addXY();
+                option.add_subXY(1);
                 this.displayMainMenu();
             } else if (menuControl == 2) {
-                option.subtractXY();
+                option.add_subXY(2);
                 this.displayMainMenu();
             } else if (menuControl == 3) {
                 option.multiplyXY();
@@ -65,7 +65,7 @@ public class MainMenu {
                 System.out.println("\n Current value in single object memory: " + Memory.getMemoryValue());
                 this.displayMainMenu();
             } else if (menuControl == 6) {
-                Memory.memoryQuery();
+                Memory.memoryArrayDisplay();
                 this.displayMainMenu();
             } else if (menuControl > 6) {
                 System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 6" + "\n");
