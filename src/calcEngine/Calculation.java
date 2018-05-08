@@ -101,14 +101,12 @@ public class Calculation {
 
         switch (type) {
             case 1:
-                addResult = value.getX() + value.getY();
-                System.out.println("\n Addition result: " + this.getAddResult());
-                Memory.memoryQuery(addResult);
+                Memory.memoryQuery(value.getX() + value.getY());
+                System.out.println("\n Addition result: " + Memory.getMemoryValue());
                 break;
             case 2:
-                subResult = value.getX() - value.getY();
-                System.out.println("\n Subtraction result: " + this.getSubXYResult());
-                Memory.memoryQuery(subResult);
+                Memory.memoryQuery(value.getX() - value.getY());
+                System.out.println("\n Subtraction result: " + Memory.getMemoryValue());
         }
 
     }

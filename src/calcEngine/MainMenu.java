@@ -8,7 +8,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
-
 public class MainMenu {
 
     private void displayMainMenu(){
@@ -21,19 +20,18 @@ public class MainMenu {
                 "\n 3 - multiplies two numbers" +
                 "\n 4 - divides two numbers" +
                 "\n 5 - display current single object memory status" +
-                "\n 6 - display element of multiple object memory" +
+                "\n 6 - display all elements of multiple object memory" +
                 "\n 0 - quit" +
                 "\n \n");
     }
 
     public void initializeMainMenu() {
-        // zmienna sterująca menu - sterowana przez użytkownika
-        int menuControl;
-        // zmienna wyłączająca menu
-        boolean switchOnOff = true;
 
-        // inicjalizacja obiektu menu
-        Calculation option = new Calculation();
+        int menuControl; // zmienna sterująca menu - sterowana przez użytkownika
+
+        boolean switchOnOff = true; // zmienna wyłączająca menu
+
+        Calculation option = new Calculation(); // inicjalizacja obiektu menu
         this.displayMainMenu();
 
         while (switchOnOff){
