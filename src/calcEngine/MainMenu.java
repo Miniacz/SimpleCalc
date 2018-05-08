@@ -10,68 +10,50 @@ import java.util.Scanner;
 
 public class MainMenu {
 
-    private void displayMainMenu(){
-        // main menu + plus info
-        System.out.println(
-                "\n \n" +
-                "Please pick menu option:" +
-                "\n 1 - adds two numbers" +
-                "\n 2 - subtracts two numbers" +
-                "\n 3 - multiplies two numbers" +
-                "\n 4 - divides two numbers" +
-                "\n 5 - display current single object memory status" +
-                "\n 6 - display all elements of multiple object memory" +
-                "\n 0 - quit" +
-                "\n \n");
-    }
-
     public void initializeMainMenu() {
 
-        int menuControl; // zmienna sterująca menu - sterowana przez użytkownika
-
-        boolean switchOnOff = true; // zmienna wyłączająca menu
+        boolean switchOnOff = true; // zmienna włączająca / wyłączająca menu
 
         Calculation option = new Calculation(); // inicjalizacja obiektu menu
-        this.displayMainMenu();
+        InfoPrinter info = new InfoPrinter(); // inicjalizacja obiektu wyświetlania informacji
+
+        info.displayMainMenu(); // wyświetlenie menu
 
         while (switchOnOff){
+            int menuControl; // zmienna sterująca menu - sterowana przez użytkownika
 
             // obsługa wyjątku, gdzie użytkownik podaje niewłaściwe dane sterujące, inne niż 0-5
             try {
                 Scanner read = new Scanner(System.in);
                 menuControl = read.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4,5 or 6.");
-                // czyszczenie wartości dla zmiennej sterującej menu; inaczej pętla wykorzysta ostatnią wybraną wartość.
-                menuControl = -1;
+                System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4 or 5.");
+                menuControl = -1; // czyszczenie wartości dla zmiennej sterującej menu; inaczej pętla wykorzysta ostatnią wybraną wartość.
             }
 
             // główny element sterowania menu
             if (menuControl == 1) {
-                option.add_subXY(1);
-                this.displayMainMenu();
+                option.calculationMethod("add"); // wybór wariantu metody - tu: dodawanie (bo metoda przyjmuje parametr 1)
+                info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 2) {
-                option.add_subXY(2);
-                this.displayMainMenu();
+                option.calculationMethod("subtract"); // wybór wariantu metody - tu: odejmowanie (bo metoda przyjmuje parametr 2)
+                info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 3) {
-                option.multiplyXY();
-                this.displayMainMenu();
+                option.calculationMethod("multiply"); // wybór wariantu metody - tu: mnożenie (bo metoda przyjmuje parametr 3)
+                info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 4) {
-                option.divideXY();
-                this.displayMainMenu();
+                option.calculationMethod("divide"); // wybór wariantu metody - tu: dzielenie (bo metoda przyjmuje parametr 3)
+                info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 5) {
-                System.out.println("\n Current value in single object memory: " + Memory.getMemoryValue());
-                this.displayMainMenu();
-            } else if (menuControl == 6) {
                 Memory.memoryArrayDisplay();
-                this.displayMainMenu();
-            } else if (menuControl > 6) {
-                System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 6" + "\n");
+                info.displayMainMenu(); // wyświetlenie menu
+            }  else if (menuControl > 5) {
+                System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
             }
 
             if (menuControl == 0) {
                 System.out.println("\n" + "Bye!" + "\n");
-                switchOnOff = false;
+                switchOnOff = false; // wyłączenie menu
             }
         }
     }

@@ -11,17 +11,10 @@ import calcEngine.*; // import paczki z klasami dla obsługi wszystkich element�
 class Main {
     public static void main(String[] args) {
 
-        InfoPrinter obj = new InfoPrinter();
+        InfoPrinter info = new InfoPrinter(); // inicjalizacja obiektu wyświetlającego informacje
+        MainMenu MenuObject = new MainMenu(); // inicjalizacja obiektu menu
 
-        // czysto estetyczne
-        obj.print(
-                "\n ==================================================="
-                + "\n TURBO CALC 6000" + " by Miniacz"
-                + "\n ==================================================="
-        );
-
-        // inicjalizacja menu przez wywołanie odpowiedniej klasy
-        MainMenu MenuObject = new MainMenu();
+        info.printCaption("main title"); // czysto estetyczne
         MenuObject.initializeMainMenu();
     }
 }
