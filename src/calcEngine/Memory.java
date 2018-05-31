@@ -4,10 +4,18 @@
 
 package calcEngine;
 
+// import klas log4j
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 // klasa z elementami statycznymi, żeby można było się do nich odnieść z różnych miejsc programu
 public class Memory {
 
+    // załączenie loggera do aplikacji
+    private static final Logger logger = LogManager.getLogger(Memory.class);
+
     private static InputValidator checkedInput = new InputValidator();
+    private static InfoPrinter info = new InfoPrinter();
 
     // tablica pamięci, która ma przechować zakres danych do późniejszego użycia
     private static double[] memoryArray = {
@@ -43,23 +51,20 @@ public class Memory {
     public static void memoryQuerySaveResult (double memoryInput) {
         boolean queryOnOff = true; // przełącznik zapytania: true - zapytanie działa, false - zapytanie zostaje zatrzymane,
 
+        logger.info("Memory array at index 0 set to 0.");
         Memory.setMemoryArrayAtIndex(memoryInput, 0); // ustawienie wyniku działania na zarezerowanym miejscu w tablicy pamięci kalkulatora, zanim uzytkownik będzie o cokolwiek zapytany
 
-        System.out.println(
-                "\n Do You want to save the result? Result will be stored in multiple object memory." +
-                "\n Please use numbers 1 or 2." +
-                "\n 1: Yes." +
-                "\n 2: No." + "\n");
+        info.printCaption("mlt_obj_mem_initial_query");
 
         while (queryOnOff) {
             double x = checkedInput.validateInput(); // zebranie wyboru użytkownika; typ danych double jest użyty dlatego, że w metodzie jest użyty double
             if (x == 1) {
                 Memory.memoryQueryStoreValueInArray(memoryInput);
-//                memoryContainer = memoryInput;
                 queryOnOff = false; // zamknięcie zapytania, po wprowadzeniu poprawnych danych do pamięci
             } else if (x == 2) {
                 queryOnOff = false; // zamknięcie zapytania, gdy użytkownik wybierze 2
             } else {
+                logger.error("User used invalid data type to navigate memory query.");
                 System.out.println("\n You have entered an invalid number. Please use 1 or 2. \n");
             }
         }
@@ -70,25 +75,29 @@ public class Memory {
     public static void memoryQueryStoreValueInArray(double memoryArrayInput) {
         boolean queryOnOff = true; // przełącznik zapytania: true - zapytanie działa, false - zapytanie zostaje zatrzymane,
 
-        System.out.println(
-                "\n At which memory index You would like to store the result?" +
-                "\n NOTE: Please use numbers 1 up to 4.");
+        info.printCaption("mlt_obj_mem_location_query");
 
         while (queryOnOff) {
+            logger.trace("Entering multiple memory management.");
             double index = checkedInput.validateInput();
             if (index == 1) {
+                logger.trace("Memory array at index 1 set to" + memoryArrayInput);
                 Memory.setMemoryArrayAtIndex(memoryArrayInput, 1);
                 queryOnOff = false; // zamknięcie zapytania, po wprowadzeniu poprawnych danych do pamięci
             } else if (index == 2) {
+                logger.trace("Memory array at index 2 set to" + memoryArrayInput);
                 Memory.setMemoryArrayAtIndex(memoryArrayInput, 2);
                 queryOnOff = false; // zamknięcie zapytania, po wprowadzeniu poprawnych danych do pamięci
             } else if (index == 3) {
+                logger.trace("Memory array at index 3 set to" + memoryArrayInput);
                 Memory.setMemoryArrayAtIndex(memoryArrayInput, 3);
                 queryOnOff = false; // zamknięcie zapytania, po wprowadzeniu poprawnych danych do pamięci
             } else if (index == 4) {
+                logger.trace("Memory array at index 4 set to " + memoryArrayInput);
                 Memory.setMemoryArrayAtIndex(memoryArrayInput, 4);
                 queryOnOff = false; // zamknięcie zapytania, po wprowadzeniu poprawnych danych do pamięci
             } else {
+                logger.error("User tried to divide by zero.");
                 System.out.println("\n You have entered an invalid number. Please use 1 up to 4. \n");
             }
         }

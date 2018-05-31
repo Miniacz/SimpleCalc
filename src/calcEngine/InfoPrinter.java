@@ -48,6 +48,20 @@ public class InfoPrinter {
                         "\n ================================"
                 );
                 break;
+            case "mlt_obj_mem_initial_query":
+                System.out.println(
+                    "\n Do You want to save the result? Result will be stored in multiple object memory." +
+                    "\n Please use numbers 1 or 2." +
+                    "\n 1: Yes." +
+                    "\n 2: No." + "\n"
+                );
+                break;
+            case "mlt_obj_mem_location_query":
+                System.out.println(
+                    "\n At which memory index You would like to store the result?" +
+                    "\n NOTE: Please use numbers 1 up to 4."
+                );
+                break;
         }
     }
 

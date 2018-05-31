@@ -27,8 +27,8 @@ public class Calculation {
 
     public void calculationMethod(String methodType) {
 
-        logger.entry();
-        logger.trace("Caption printed");
+        logger.trace("Entering calculation.");
+
         // wyświetlenie odpowiednich nagłówków
         switch (methodType) {
             case "add":
@@ -45,9 +45,9 @@ public class Calculation {
                 break;
         }
 
+        logger.trace("Collecting input from user for calculation.");
         value.collectInput(); // zebranie danych od użytkownika w klasie InputValueContainer
 
-        logger.trace("Collecting input from user");
         switch (methodType) {
             case "add":
                 Memory.memoryQuerySaveResult(value.getX() + value.getY());
@@ -66,6 +66,7 @@ public class Calculation {
 
                 double divideByZeroCheck = Memory.getLastCalculationValue();
                 if (divideByZeroCheck == POSITIVE_INFINITY) {
+                    logger.error("User tried to divide by zero");
                     System.out.println("\n Division did result in positive infinity, possibly because of dividing by zero." + "\n");
                 } else {
                     System.out.println("\n Division result: " + Memory.getLastCalculationValue() + "\n");

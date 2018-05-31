@@ -32,6 +32,7 @@ public class MainMenu {
                 Scanner read = new Scanner(System.in);
                 menuControl = read.nextInt();
             } catch (InputMismatchException e) {
+                logger.error("User used wrong value to navigate the main menu.");
                 System.out.println("You have used invalid character(s). To control menu, You have to use 0,1,2,3,4 or 5.");
                 menuControl = -1; // czyszczenie wartości dla zmiennej sterującej menu; inaczej pętla wykorzysta ostatnią wybraną wartość.
             }

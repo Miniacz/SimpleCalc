@@ -6,7 +6,7 @@
     </Properties>
 
     <Appenders>
-        <File name="logFile" fileName="test.log">
+        <File name="logFile" fileName="src/resources/logs/test.log">
             <PatternLayout>
                 <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
             </PatternLayout>
@@ -18,6 +18,12 @@
 
     <Loggers>
         <Logger name="Calculation" level="trace" additivity="true">
+            <AppenderRef ref="logFile"/>
+        </Logger>
+        <Logger name="Memory" level="trace" additivity="true">
+            <AppenderRef ref="logFile"/>
+        </Logger>
+        <Logger name="InputValidator" level="trace" additivity="true">
             <AppenderRef ref="logFile"/>
         </Logger>
         <Root level="trace">
