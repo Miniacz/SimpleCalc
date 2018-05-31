@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6451b0a9-5dde-4723-ba67-aed314e394ed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCalc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCalc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/Calculation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/Calculation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/InfoPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/InfoPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calcEngine/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/Calculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calcEngine/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calcEngine/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j2.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +47,8 @@
       <file leaf-file-name="Calculation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="187">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,7 +85,7 @@
       <file leaf-file-name="InfoPrinter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
+            <state relative-caret-position="293">
               <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
               <folding>
                 <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
@@ -100,10 +95,10 @@
         </entry>
       </file>
       <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/calcEngine/log4j2.xml">
+        <entry file="file://$PROJECT_DIR$/src/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="289">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -169,8 +164,9 @@
         <option value="$PROJECT_DIR$/src/calcEngine/InfoPrinter.java" />
         <option value="$PROJECT_DIR$/src/SimpleCalc.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/MainMenu.java" />
-        <option value="$PROJECT_DIR$/src/calcEngine/Calculation.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/calcEngine/Calculation.java" />
+        <option value="$PROJECT_DIR$/src/log4j2.xml" />
       </list>
     </option>
   </component>
@@ -226,6 +222,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\[PROJEKTY]\GIT\SimpleCalc\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -333,6 +334,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -343,11 +345,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.4047619" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.4047619" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2408492" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2408492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -382,16 +384,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/Memory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -770,16 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
-          <folding>
-            <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -800,20 +782,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+          <folding>
+            <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="187">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/log4j2.xml">
+    <entry file="file://$PROJECT_DIR$/test.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="289">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>

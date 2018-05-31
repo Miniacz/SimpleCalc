@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN"  name="BasicTest">
+
+    <Properties>
+        <Property name="testLogFile"></Property>
+    </Properties>
+
+    <Appenders>
+        <File name="logFile" fileName="test.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="Calculation" level="trace" additivity="true">
+            <AppenderRef ref="logFile"/>
+        </Logger>
+        <Root level="trace">
+            <AppenderRef ref="logFile"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
