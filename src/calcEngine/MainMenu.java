@@ -7,8 +7,13 @@ package calcEngine;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+// import klas log4j
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class MainMenu {
+    // załączenie loggera do aplikacji
+    private static final Logger logger = LogManager.getLogger(MainMenu.class);
 
     public void initializeMainMenu() {
 
@@ -48,10 +53,12 @@ public class MainMenu {
                 Memory.memoryArrayDisplay();
                 info.displayMainMenu(); // wyświetlenie menu
             }  else if (menuControl > 5) {
+                logger.error("User used wrong value to navigate the menu.");
                 System.out.println("\n ERROR - Wrong value picked. " + "\n Please enter value between 0 up to 5" + "\n");
             }
 
             if (menuControl == 0) {
+                logger.trace("User quits.");
                 System.out.println("\n" + "Bye!" + "\n");
                 switchOnOff = false; // wyłączenie menu
             }

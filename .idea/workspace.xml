@@ -3,17 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6451b0a9-5dde-4723-ba67-aed314e394ed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCalc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCalc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/Calculation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/Calculation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/InputValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/InputValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/InfoPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/InfoPrinter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/Memory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimpleCalc/calcEngine/Memory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleCalc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calcEngine/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/Calculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calcEngine/InfoPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/InfoPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calcEngine/InputValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/InputValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calcEngine/InputValueContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/InputValueContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calcEngine/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calcEngine/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calcEngine/Memory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,10 +28,10 @@
       <file leaf-file-name="SimpleCalc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="221">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
-                <element signature="e#0#767#0" expanded="true" />
+                <element signature="e#0#586#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,10 +40,10 @@
       <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="816">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="28" />
               <folding>
-                <element signature="e#0#2686#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,25 +52,23 @@
       <file leaf-file-name="Calculation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="650">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <element signature="e#0#3906#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Memory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Memory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/Memory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="70" />
+            <state relative-caret-position="17">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
-                <element signature="e#0#4601#0" expanded="true" />
                 <element signature="method#setMemoryArrayAtIndex#0;class#Memory#0" />
                 <element signature="method#memoryQuerySaveResult#0;class#Memory#0" />
-                <element signature="method#memoryArrayQuery#0;class#Memory#0" />
                 <element signature="method#memoryArrayDisplay#0;class#Memory#0" />
               </folding>
             </state>
@@ -83,8 +78,8 @@
       <file leaf-file-name="InputValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="11" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,14 +90,20 @@
       <file leaf-file-name="InfoPrinter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="731">
+              <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
               <folding>
-                <element signature="e#0#194#0" expanded="true" />
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
                 <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/calcEngine/log4j2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -110,8 +111,8 @@
       <file leaf-file-name="InputValueContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValueContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="17">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="method#collectInput#0;class#InputValueContainer#0" />
                 <element signature="method#getUserInputForX#0;class#InputValueContainer#0" />
@@ -165,24 +166,27 @@
         <option value="$PROJECT_DIR$/src/calcEngine/InputValidator.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/Memory.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/InputValueContainer.java" />
-        <option value="$PROJECT_DIR$/src/calcEngine/Calculation.java" />
-        <option value="$PROJECT_DIR$/src/calcEngine/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/calcEngine/InfoPrinter.java" />
         <option value="$PROJECT_DIR$/src/SimpleCalc.java" />
+        <option value="$PROJECT_DIR$/src/calcEngine/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/calcEngine/Calculation.java" />
+        <option value="$PROJECT_DIR$/src/calcEngine/log4j2.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="width" value="1378" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -204,22 +208,24 @@
             </path>
             <path>
               <item name="SimpleCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCalc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleCalc.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Try-Catch Excercise" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -326,29 +332,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32944915" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32857144" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.40552017" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.4047619" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24114583" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2408492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.28237793" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.28237793" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -377,22 +382,12 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="714">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#2686#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -402,10 +397,8 @@
         <state relative-caret-position="221">
           <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
-            <element signature="e#0#4601#0" expanded="true" />
             <element signature="method#setMemoryArrayAtIndex#0;class#Memory#0" />
             <element signature="method#memoryQuerySaveResult#0;class#Memory#0" />
-            <element signature="method#memoryArrayQuery#0;class#Memory#0" />
             <element signature="method#memoryArrayDisplay#0;class#Memory#0" />
           </folding>
         </state>
@@ -426,9 +419,6 @@
         <state relative-caret-position="85">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
-            <element signature="e#0#194#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
             <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
           </folding>
         </state>
@@ -450,9 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#3906#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -461,7 +448,7 @@
         <state relative-caret-position="119">
           <caret line="13" column="13" selection-end-line="26" selection-end-column="1" />
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -470,9 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" lean-forward="true" selection-end-line="70" />
-          <folding>
-            <element signature="e#0#3906#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,7 +477,7 @@
         <state relative-caret-position="272">
           <caret line="27" column="38" selection-end-line="85" />
           <folding>
-            <element signature="e#0#2686#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -513,9 +497,6 @@
         <state relative-caret-position="119">
           <caret line="11" lean-forward="true" selection-end-line="11" />
           <folding>
-            <element signature="e#0#194#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
             <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
           </folding>
         </state>
@@ -526,7 +507,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -536,7 +517,7 @@
         <state relative-caret-position="391">
           <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
-            <element signature="e#0#2686#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -568,9 +549,6 @@
         <state relative-caret-position="85">
           <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
-            <element signature="e#0#194#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
             <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
           </folding>
         </state>
@@ -580,9 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#0#3906#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,7 +565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,7 +576,7 @@
         <state relative-caret-position="34">
           <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding>
-            <element signature="e#0#2686#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -633,9 +608,6 @@
         <state relative-caret-position="119">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#194#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
             <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
           </folding>
         </state>
@@ -645,7 +617,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,23 +626,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/src/java.base/java/lang/Float.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/src/java.base/java/lang/Float.java" />
     <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -679,7 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,7 +654,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -697,7 +663,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,7 +672,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,7 +681,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,7 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,7 +699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,7 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -751,7 +717,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,83 +726,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#767#0" expanded="true" />
+            <element signature="e#0#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/src/java.base/module-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5989" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/src/java.base/java/lang/Float.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/src/java.base/module-info.java" />
+    <entry file="file://$USER_HOME$/Desktop/src/java.base/java/lang/Float.java" />
     <entry file="file://$PROJECT_DIR$/src/test.java" />
     <entry file="file://$PROJECT_DIR$/src/calcEngine/test.java" />
     <entry file="file://$PROJECT_DIR$/src/calcEngine/MenuItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#2686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#3906#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#194#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValueContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="17">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="method#collectInput#0;class#InputValueContainer#0" />
             <element signature="method#getUserInputForX#0;class#InputValueContainer#0" />
@@ -847,17 +750,148 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calcEngine/Memory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="70" />
+        <state relative-caret-position="17">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#0#4601#0" expanded="true" />
             <element signature="method#setMemoryArrayAtIndex#0;class#Memory#0" />
             <element signature="method#memoryQuerySaveResult#0;class#Memory#0" />
-            <element signature="method#memoryArrayQuery#0;class#Memory#0" />
             <element signature="method#memoryArrayDisplay#0;class#Memory#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/InputValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/InfoPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+          <folding>
+            <element signature="method#displayMainMenu#0;class#InfoPrinter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/Calculation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/calcEngine/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.apache.logging.log4j:log4j-core:2.11.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SimpleCalc</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

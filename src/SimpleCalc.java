@@ -1,6 +1,6 @@
 /*
-* Główny moduł programu
-* */
+ * Główny moduł programu
+ * */
 
 /* TO DO
 - dodać obcinanie wyniku - jeśli wychodzi liczba całkowita, nie powinno wyświetlać przecinka i zera
