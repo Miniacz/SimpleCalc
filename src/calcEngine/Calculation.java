@@ -50,18 +50,22 @@ public class Calculation {
 
         switch (methodType) {
             case "add":
+                logger.info("Calculating value & sending it into memory - calc type: add.");
                 Memory.memoryQuerySaveResult(value.getX() + value.getY());
                 System.out.println("\n Addition result: " + Memory.getMemoryArrayValueAtIndex(0));
                 break;
             case "subtract":
+                logger.info("Calculating value & sending it into memory - calc type: subtract.");
                 Memory.memoryQuerySaveResult(value.getX() - value.getY());
                 System.out.println("\n Subtraction result: " + Memory.getMemoryArrayValueAtIndex(0));
                 break;
             case "multiply":
+                logger.info("Calculating value & sending it into memory - calc type: multiply.");
                 Memory.memoryQuerySaveResult(value.getX() * value.getY());
                 System.out.println("\n Multiplication result: " + Memory.getMemoryArrayValueAtIndex(0));
                 break;
             case "divide":
+                logger.info("Calculating value & sending it into memory - calc type: divide.");
                 Memory.memoryQuerySaveResult(value.getX() / value.getY());
 
                 double divideByZeroCheck = Memory.getLastCalculationValue();

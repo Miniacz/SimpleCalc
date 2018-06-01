@@ -39,18 +39,23 @@ public class MainMenu {
 
             // główny element sterowania menu
             if (menuControl == 1) {
+                logger.info("User has chosen addition.");
                 option.calculationMethod("add"); // wybór wariantu metody - tu: dodawanie (bo metoda przyjmuje parametr 1)
                 info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 2) {
+                logger.info("User has chosen subtraction.");
                 option.calculationMethod("subtract"); // wybór wariantu metody - tu: odejmowanie (bo metoda przyjmuje parametr 2)
                 info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 3) {
+                logger.info("User has chosen multiplication.");
                 option.calculationMethod("multiply"); // wybór wariantu metody - tu: mnożenie (bo metoda przyjmuje parametr 3)
                 info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 4) {
+                logger.info("User has chosen division.");
                 option.calculationMethod("divide"); // wybór wariantu metody - tu: dzielenie (bo metoda przyjmuje parametr 3)
                 info.displayMainMenu(); // wyświetlenie menu
             } else if (menuControl == 5) {
+                logger.info("User has chosen to display memory array.");
                 Memory.memoryArrayDisplay();
                 info.displayMainMenu(); // wyświetlenie menu
             }  else if (menuControl > 5) {

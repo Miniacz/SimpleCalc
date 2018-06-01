@@ -1,0 +1,33 @@
+2018-06-01 21:15:06,752 TRACE Main [main] Application starts.
+2018-06-01 21:15:11,005 INFO c.MainMenu [main] User has chosen addition.
+2018-06-01 21:15:11,005 TRACE c.Calculation [main] Entering calculation.
+2018-06-01 21:15:11,006 TRACE c.Calculation [main] Collecting input from user for calculation.
+2018-06-01 21:15:11,006 TRACE c.InputValueContainer [main] Entering getting method for X.
+2018-06-01 21:15:11,006 TRACE c.InputValueContainer [main] Asking, if user wants to use last computation value for X.
+2018-06-01 21:15:11,007 TRACE c.InputValidator [main] Waiting for user input.
+2018-06-01 21:15:13,295 TRACE c.InputValidator [main] Input collected properly.
+2018-06-01 21:15:13,295 TRACE c.InputValueContainer [main] Asking user to input first number.
+2018-06-01 21:15:13,296 TRACE c.InputValidator [main] Waiting for user input.
+2018-06-01 21:15:15,727 TRACE c.InputValidator [main] Input collected properly.
+2018-06-01 21:15:15,736 INFO c.InputValueContainer [main] Setting X to: 34.0
+2018-06-01 21:15:15,736 TRACE c.InputValueContainer [main] Entering getting method for Y.
+2018-06-01 21:15:15,736 TRACE c.InputValueContainer [main] Asking, if user wants to use last computation value for Y.
+2018-06-01 21:15:15,737 TRACE c.InputValidator [main] Waiting for user input.
+2018-06-01 21:15:17,442 ERROR c.InputValidator [main] User used invalid data type.
+2018-06-01 21:15:17,442 TRACE c.InputValidator [main] Waiting for user input.
+2018-06-01 21:15:19,749 TRACE c.InputValidator [main] Input collected properly.
+2018-06-01 21:15:19,749 ERROR c.InputValueContainer [main] Invalid input for Y.
+2018-06-01 21:15:19,749 TRACE c.InputValidator [main] Waiting for user input.
+2018-06-01 21:15:23,286 TRACE c.InputValidator [main] Input collected properly.
+2018-06-01 21:15:23,287 TRACE c.InputValueContainer [main] Asking user to input second number.
+2018-06-01 21:15:23,288 TRACE c.InputValidator [main] Waiting for user input.
+2018-06-01 21:15:25,062 TRACE c.InputValidator [main] Input collected properly.
+2018-06-01 21:15:25,063 INFO c.InputValueContainer [main] Setting Y to: 23.0
+2018-06-01 21:15:25,063 INFO c.Calculation [main] Calculating value & sending it into memory - calc type: add.
+2018-06-01 21:15:25,069 TRACE c.Memory [main] Entering general memory query.
+2018-06-01 21:15:25,069 INFO c.Memory [main] Memory array at index 0 set to 0.
+2018-06-01 21:15:25,069 INFO c.Memory [main] Asking user, if he wants to store value in multiple object memory.
+2018-06-01 21:15:25,070 TRACE c.InputValidator [main] Waiting for user input.
+2018-06-01 21:15:26,820 TRACE c.InputValidator [main] Input collected properly.
+2018-06-01 21:15:28,792 INFO c.MainMenu [main] User has chosen to display memory array.
+2018-06-01 21:15:30,288 TRACE c.MainMenu [main] User quits.

@@ -15,9 +15,9 @@ public class InfoPrinter {
         switch (captionType) {
             case "main title":
                 System.out.println(
-                        "\n ============ ADD ============" +
-                                "\n adds two numbers given by user " +
-                                "\n ============================="
+                        "\n ===================================================" +
+                        "\n TURBO CALC 6000" + " by Miniacz" +
+                        "\n ==================================================="
                 );
                 break;
             case "add":
@@ -60,6 +60,20 @@ public class InfoPrinter {
                 System.out.println(
                     "\n At which memory index You would like to store the result?" +
                     "\n NOTE: Please use numbers 1 up to 4."
+                );
+                break;
+            case "input_get_X":
+                System.out.println(
+                        "\n Do You want to use last result for the first number?" +
+                        "\n 1: yes" +
+                        "\n 2: no"
+                );
+                break;
+            case "input_get_Y":
+                System.out.println(
+                        "\n Do You want to use last result for the second number?" +
+                        "\n 1: yes" +
+                        "\n 2: no"
                 );
                 break;
         }
